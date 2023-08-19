@@ -49,6 +49,12 @@ p {
     margin: auto;
 }
 
+.Container-white{
+    max-width: 1440px;
+    margin: auto;
+    background-color: white;
+}
+
 /* HEADER, NAVBAR */
 
 .Header {
@@ -119,12 +125,13 @@ p {
 }
 
 .Hero__image img {
-    object-fit: cover;
+    object-fit: cover;   
 }
 
 .Hero__content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 12px calc(var(--main-padding));
     width: min(50%, 600px);
 }
@@ -222,6 +229,7 @@ main {
 .We__info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -234,11 +242,13 @@ main {
 }
 
 .Title-subtext {
+    color: var(--1, #1E1D4C);
     font-size: 20px;
     font-style: normal;
+    margin-bottom: 20px;
     font-weight: 400;
-    line-height: 157.4%;
-    margin-bottom: 10px;
+    line-height: 110%; /* 22px */
+    letter-spacing: 2.5px;
 }
 
 .Text {
@@ -249,6 +259,8 @@ main {
 /* WE SERVICES */
 
 .We__Services {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 80px 0;
 }
@@ -256,6 +268,144 @@ main {
 .Title-center {
     text-align: center;
 }
+
+.We__Services-box-imgs {
+    display: flex;
+    margin: 5%;
+}
+
+.We__Services-box-imgs-interest {
+    display: flex;
+    margin: 5%;
+    align-items: center;
+    flex-wrap: wrap;   
+    justify-content: center;  
+    margin-bottom: 15%;  
+}
+
+.We__Services-box-interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 315px;
+    gap: 16px;
+    align-items: center;
+}
+
+.We__Services-box {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 544px;
+    gap: 16px;
+    align-items: center;
+    margin: 2%;
+}
+
+.We__Services-box-info {   
+    display: flex;
+    width: 70%;
+}
+
+.We__Services-text-info {
+    color: var(--2, #5E6282);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.We__Services-title-subtext {
+    color: var(--1, #1E1D4C);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 33px */
+    margin-top: 8%;
+}
+
+/* CHOOSE YOUR TYPE */
+.Choose__your-shape {
+    display: flex;
+    flex-direction: row;
+}
+
+.Choose__your-shape-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Choose__your-shape-service {
+    width: 336px;
+    height: 227px;
+    flex-shrink: 0;
+    padding: 3%;   
+    border-radius: 36px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.Choose__your-shape-title-service {
+    color: var(--text-heading-color, #1E1D4C);
+    font-family: Open Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.Choose__your-shape-text-service {
+    color: var(--textclr, #5E6282);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+/* INFORMACION CONTAMOS CON REPSE */
+.Text__Information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.Text__Information-title {
+    text-align: center;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 99px */
+    background: linear-gradient(48deg, #000083 0%, #2EBDF2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Text__Information-text {
+    width: 85%;
+    margin-top: 1%;
+    text-align: center;
+
+}
+
+.Text__Information-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.Work__With-us {
+    margin: 2%;
+}
+
+
+
 
 
 
