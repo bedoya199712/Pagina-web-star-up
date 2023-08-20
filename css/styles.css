@@ -1,15 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 /* RESET */ 
 body {
     margin: 0;
-    background-color: rgb(247, 247, 251);
+    background-color: white;
 }
 
 ul,h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
     font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* FONT */
@@ -25,8 +34,12 @@ html {
 /* TITULOS PAGE AND GENERAL */
 h1 {
     font-size: 52px;
-    font-weight: 800;
-    line-height: 65px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
 }
 
 h4 {
@@ -35,13 +48,19 @@ h4 {
 }
 
 h6 {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 p {
+    margin: 0;
     font-size: 16px;
     font-weight: 400;
+}
+
+.text-lg {
+    font-size: 22px;
+    line-height: 35px;
 }
 
 .Container {
@@ -49,10 +68,8 @@ p {
     margin: auto;
 }
 
-.Container-white{
-    max-width: 1440px;
-    margin: auto;
-    background-color: white;
+.Container-important {
+    background-color: rgb(247, 247, 251);
 }
 
 /* HEADER, NAVBAR */
@@ -164,7 +181,13 @@ p {
     border-radius: 10px;
     border: none;
     display: inline;
+    font-family: inherit;
 }
+
+.AppButton--large {
+    min-width: 250px;
+}
+
 /* MAIN - CONTENIDO */
 main {
     position: relative;
@@ -177,10 +200,10 @@ main {
     position: relative;
     display: flex;
     gap: 30px;
-    align-items: center;
     justify-content: center;
     top: -80px;
     width: 100%;
+    align-items: stretch;
 }
 
 .Service {
@@ -215,11 +238,10 @@ main {
 /* ABOUT US */
 
 .We {
-    max-width: 980px;
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 20px 0 90px 0;
+    padding: 80px 0;
 }
 
 .We__img img {
@@ -231,6 +253,15 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    max-width: 600px;
+   
+}
+
+.Title-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .Title-text {
@@ -242,10 +273,11 @@ main {
 }
 
 .Title-subtext {
+    margin-bottom: 20px;
     color: var(--1, #1E1D4C);
     font-size: 20px;
     font-style: normal;
-    margin-bottom: 20px;
+    
     font-weight: 400;
     line-height: 110%; /* 22px */
     letter-spacing: 2.5px;
@@ -259,56 +291,53 @@ main {
 /* WE SERVICES */
 
 .We__Services {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
     padding: 80px 0;
 }
 
-.Title-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.We__Services-common {
+    margin-bottom: 70px;
+}
+
+.We__Services-box-img {
+    width: 100%;
+    height: 100%;
 }
 
 .We__Services-box-imgs {
+    margin-top: 70px;
     display: flex;
-    margin: 5%;
+    justify-content: center;
 }
 
 .We__Services-box-imgs-interest {
     display: flex;
-    margin: 5%;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;   
     justify-content: center;  
-    margin-bottom: 15%;  
+    margin: 40px 0;
+    gap: 40px 10px;
 }
 
 .We__Services-box-interest {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 200px;
-    height: 315px;
-    gap: 16px;
+    gap: 2px;
+    flex-basis: 20%;
     align-items: center;
+}
+
+.We__Services-box-info {
+    width: 80%;
 }
 
 .We__Services-box {
+    box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    width: 375px;
-    height: 544px;
-    gap: 16px;
+    gap: 5px;
     align-items: center;
     margin: 2%;
-}
-
-.We__Services-box-info {   
-    display: flex;
-    width: 70%;
 }
 
 .We__Services-text-info {
@@ -327,26 +356,37 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 33px */
-    margin-top: 8%;
 }
 
 /* CHOOSE YOUR TYPE */
 .Choose__your-shape {
     display: flex;
     flex-direction: row;
+    padding: 160px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.Choose__your-shape-text {
+    max-width: 50%;
 }
 
 .Choose__your-shape-type {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 20px;
+  
+    justify-items: center;
 }
 
+
 .Choose__your-shape-service {
-    width: 336px;
-    height: 227px;
-    flex-shrink: 0;
-    padding: 3%;   
+    max-width: 700px;
+    flex-basis: fit-content;
+    padding: 40px 40px;
     border-radius: 36px;
     background: var(--white, #FFF);
     box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
@@ -354,12 +394,9 @@ main {
 
 .Choose__your-shape-title-service {
     color: var(--text-heading-color, #1E1D4C);
-    font-family: Open Sans;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
 }
+
+
 
 .Choose__your-shape-text-service {
     color: var(--textclr, #5E6282);
@@ -374,7 +411,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    gap: 60px;
 }
 
 .Text__Information-title {
@@ -391,9 +428,7 @@ main {
 
 .Text__Information-text {
     width: 85%;
-    margin-top: 1%;
     text-align: center;
-
 }
 
 .Text__Information-imgs {
@@ -411,34 +446,64 @@ main {
 /* TESTIMONYS */
 .Testimony {
     background-color: #F7F7FB;
+    border-radius: 30px;
+    padding: 70px 50px;
 }
 
 .Testimony__title-width {
-    padding-top:  3%;
-    width: 85%;
-    margin: 0;
+    max-width: 700px;
 }
 
-.Testimony__box-imgs {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 47px;
-}
-
-.Testimony__box {
-    width: 250px;
-    height: 265px;
-    flex-shrink: 0;
+.Testimony__boxes {
     display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 47px;
+    flex-basis: auto;
+    margin-top: 50px;
+}
+
+.TestimonyBox-logo {
+    color: white;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    background-color: #000083;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: calc(-1 * var(--logo-middle-size))
+}
+
+.TestimonyBox {
+
+    --logo-size: 103px;
+    --logo-middle-size: 51px;
+
+    margin-top: var(--logo-middle-size);
+    position: relative;
+    max-width: 350px;
+    display: inline-flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     border-radius: 10px;
     background: linear-gradient(0deg, var(--white, #FFF) 0%, var(--white, #FFF) 100%), #393E35;
-    padding: 20px;
-    margin-top: 7%;
+    padding: calc(var(--logo-middle-size) + 20px) 20px 20px 20px;
 
     /* sombra1 */
     box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.TestimonyBox__footer-text {
+    color: var(--1, #1E1D4C);
+    font-weight: 600;
+}
+
+.TestimonyBox-text {
+    text-align: center;
+    color: #5E6282;
 }
 
 /* BRANDS */
@@ -474,7 +539,7 @@ main {
 
 .Contact__information-Title-text{
     color: var(--blue-keep, #000083);
-    font-family: Inter;
+
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
@@ -514,9 +579,30 @@ main {
     width: 100%;
 }
 
+/* FOOTER */
 
+footer {
+    background-color: #000083;
+    padding: 50px 0;
+}
 
+.Footer {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 200px;
+}
 
+.Footer__info {
+    display: inline-flex;
+    gap: 80px;
+}
 
+.Footer__category-title {
+    margin-bottom: 10px;
+}
 
+.Footer__category {
+    flex-basis: 33.333%;
+}
 
