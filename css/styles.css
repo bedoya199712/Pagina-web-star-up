@@ -28,7 +28,9 @@ html {
 }
 
 :root {
-    --main-padding: 30px;
+    --main-padding: 30px;   
+    --logo-size: 103px;
+    --logo-middle-size: 51px;
 }
 
 /* TITULOS PAGE AND GENERAL */
@@ -359,6 +361,7 @@ main {
 }
 
 /* CHOOSE YOUR TYPE */
+
 .Choose__your-shape {
     display: flex;
     flex-direction: row;
@@ -367,7 +370,18 @@ main {
     align-items: center;
 }
 
-
+.Choose__your-shape-logo {
+    color: white;
+    width: calc(var(--logo-size)/1.5);
+    height: calc(var(--logo-size)/1.5);
+    background-color: #00CAFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(-1 * var(--logo-middle-size));
+    margin-bottom: 70px;
+}
 
 .Choose__your-shape-text {
     max-width: 50%;
@@ -394,6 +408,7 @@ main {
 
 .Choose__your-shape-title-service {
     color: var(--text-heading-color, #1E1D4C);
+    margin-bottom: 10px;
 }
 
 
@@ -471,14 +486,13 @@ main {
     border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
     top: calc(-1 * var(--logo-middle-size))
 }
 
 .TestimonyBox {
 
-    --logo-size: 103px;
-    --logo-middle-size: 51px;
 
     margin-top: var(--logo-middle-size);
     position: relative;
@@ -591,6 +605,7 @@ footer {
     align-items: center;
     color: white;
     gap: 200px;
+    margin-bottom: 50px;
 }
 
 .Footer__info {
@@ -604,5 +619,18 @@ footer {
 
 .Footer__category {
     flex-basis: 33.333%;
+}
+
+.divider {  
+    margin: 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+
+.Footer__hr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
