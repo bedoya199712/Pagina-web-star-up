@@ -17,19 +17,19 @@
             <div class="Header__nav">
                 <nav>
                     <ul class="Header__nav-list">
-                        <li><a href="#" class="Header__nav-item">Servicios</a></li>
-                        <li><a href="#" class="Header__nav-item">Nosotros</a></li>
+                        <li><a href="#Hero" class="Header__nav-item">Servicios</a></li>
+                        <li><a href="#We" class="Header__nav-item">Nosotros</a></li>
                         <li><a href="#" class="Header__nav-item">Beneficios</a></li>
-                        <li><a href="#" class="Header__nav-item">Trabaja con nosotros</a></li>
+                        <li><a href="#JoinTheTeam" class="Header__nav-item">Trabaja con nosotros</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="Header__contact">
-                <button class="ContactMeButton">Contáctanos</button>
+                <a href="#Contact"><input type="submit" class="ContactMeButton" value="Contáctanos"></a>
             </div>
         </div>
     </header>
-    <div class="Hero">
+    <div id="Hero" class="Hero">
         <div class="Hero__overlay">
             <img src="./img/Liempieza escoge tu manera.png" width="100%" height="100%"
                 alt="Imagen de fondo de limpieza">
@@ -44,7 +44,7 @@
                         impecables y seguros.
                     </p>
                     <div>
-                        <button class="AppButton">Llámanos</button>
+                        <a href="#Footer"><input type="submit" class="AppButton" value="Llámanos"></a>
                     </div>
                 </div>
                 <div class="Hero__image">
@@ -91,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="We Container">
+            <div id="We" class="We Container">
                 <div class="We__info">
                     <div class="Title">
                         <h4 class="Title-subtext">Sobre nosotros</h4>
@@ -111,7 +111,7 @@
                 </div>
             </div>
         </div>
-        <div class="Container">
+        <div id="We__Services" class="Container">
             <div class="We__Services">
                 <div class="We__Services-common">
                     <div class="Title Title-center">
@@ -207,7 +207,7 @@
                         </div>
                     </div>
                     <div class="Title-center">
-                        <button class="AppButton AppButton--large">Contáctanos</button>
+                        <a href="#Footer"><input type="submit" class="AppButton AppButton--large" value="Contáctanos"></a>
                     </div>
                 </div>
             </div>
@@ -298,8 +298,7 @@
 
         </div>
 
-        <div class="Container">
-
+        <div id="JoinTheTeam" class="Container">
             <div class="We JoinTheTeam">
                 <div class="We__img">
                     <img src="./img/Trabaja con nosotros.jpg" alt="Imagen de una persona limpiando mesas">
@@ -314,7 +313,7 @@
                         oportunidades laborales.
                     </p>
                     <div>
-                        <button class="AppButton">Quiero ser parte</button>
+                        <a href="#Contact"><input type="submit" class="AppButton" value="Quiero ser parte"></a>
                     </div>
                 </div>
             </div>
@@ -551,10 +550,10 @@
             </div>
         </div>
 
-        <div class="We Container-white">
+        <div id="Contact" class="We Container-white">
             <div class="Contact">
                 <div class="Contact__information">
-                    <h2 class="Contact__information-Title-text">!Estamos a un Mensaje de Distancia!</h2>
+                    <h2 class="Contact__information-Title-text">¡Estamos a un Mensaje de Distancia!</h2>
                     <p class="Text">
                         Nuestro equipo está listo para atenderte, responder tus preguntas y ofrecerte
                         opciones que se adapten a tu presupuesto y cronograma.
@@ -577,15 +576,16 @@
                         <input type="text" class="Contact__input" placeholder="Asunto">
                         <img class="input-icon" src="./img/icon_chat.svg" alt="icono de mensaje">
                     </div>
-                    <button class="AppButton AppButton--large">Enviar</button>
+                    <form action="#">
+                        <input type="submit" class="AppButton AppButton--large" value="Enviar">
+                    </form>
                 </div>
             </div>
         </div>
 
     </main>
 
-    <footer>
-
+    <footer id="Footer">
         <div class="Container">
             <div class="Footer">
                 <div class="Footer__logo">
@@ -593,9 +593,36 @@
                         <img src="./img/LOGO INDUSTRIAL KEEPER 2023-04 2.svg" alt="">
                     </div>
                     <div class="Footer__logo-icons">
-                        <img src="./img/icon_instagram.svg" alt="icon instagram">
-                        <img src="./img/icon_facebook.svg" alt="icon facebook">
-                        <img src="./img/icon_linkedin.svg" alt="icon linkedin">
+                        <div class="Footer__logo-icon">
+                            <a class="Footer__logo-icon-a" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.05314 0.647461H12.5388C15.5233 0.647461 17.9435 3.06769 17.9435 6.05216V12.5378C17.9435 15.5223 15.5233 17.9425 12.5388 17.9425H6.05314C3.06866 17.9425 0.648438 15.5223 0.648438 12.5378V6.05216C0.648438 3.06769 3.06866 0.647461 6.05314 0.647461ZM12.5385 16.3213C14.6247 16.3213 16.3218 14.6242 16.3218 12.538V6.05233C16.3218 3.96612 14.6247 2.26904 12.5385 2.26904H6.05282C3.96661 2.26904 2.26953 3.96612 2.26953 6.05233V12.538C2.26953 14.6242 3.96661 16.3213 6.05282 16.3213H12.5385ZM4.97266 9.29495C4.97266 6.90716 6.90862 4.97119 9.29642 4.97119C11.6842 4.97119 13.6202 6.90716 13.6202 9.29495C13.6202 11.6827 11.6842 13.6187 9.29642 13.6187C6.90862 13.6187 4.97266 11.6827 4.97266 9.29495ZM6.59375 9.29512C6.59375 10.7847 7.80656 11.9975 9.2961 11.9975C10.7856 11.9975 11.9985 10.7847 11.9985 9.29512C11.9985 7.80451 10.7856 6.59277 9.2961 6.59277C7.80656 6.59277 6.59375 7.80451 6.59375 9.29512ZM14.5195 4.64694C14.5195 4.96514 14.2615 5.22308 13.9433 5.22308C13.6251 5.22308 13.3672 4.96514 13.3672 4.64694C13.3672 4.32875 13.6251 4.0708 13.9433 4.0708C14.2615 4.0708 14.5195 4.32875 14.5195 4.64694Z"
+                                        fill="#000083" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="Footer__logo-icon">
+                            <a class="Footer__logo-icon-a" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="35" viewBox="0 0 36 35"
+                                    fill="none">
+                                    <path
+                                        d="M18.9652 14.5926V12.4308C18.9652 11.8341 19.4495 11.3498 20.0462 11.3498H21.1271V8.64746H18.9652C17.1741 8.64746 15.7224 10.0992 15.7224 11.8903V14.5926H13.5605V17.295H15.7224V25.9425H18.9652V17.295H21.1271L22.2081 14.5926H18.9652Z"
+                                        fill="#000083" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="Footer__logo-icon">
+                            <a class="Footer__logo-icon-a" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.60946 2.45805C4.60946 3.50278 3.76254 4.3497 2.71782 4.3497C1.67309 4.3497 0.826172 3.50278 0.826172 2.45805C0.826172 1.41332 1.67309 0.566406 2.71782 0.566406C3.76254 0.566406 4.60946 1.41332 4.60946 2.45805ZM0.826172 5.97119H4.69378V17.8615H0.826172V5.97119ZM15.2282 6.11063C15.2145 6.10631 15.2011 6.10187 15.1876 6.09742C15.1607 6.08853 15.1338 6.07965 15.105 6.07172C15.0531 6.05983 15.0012 6.0501 14.9483 6.04145C14.7429 6.00038 14.518 5.97119 14.2543 5.97119C11.9994 5.97119 10.5694 7.61098 10.0981 8.24441V5.97119H6.23047V17.8615H10.0981V11.3759C10.0981 11.3759 13.0209 7.30507 14.2543 10.295V17.8615H18.1208V9.83771C18.1208 8.04119 16.8896 6.54409 15.2282 6.11063Z"
+                                        fill="#000083" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -606,10 +633,10 @@
                         </div>
                         <nav class="Footer__nav">
                             <ul>
-                                <li><a href="#">Nosotros</a></li>
-                                <li><a href="#">Servicios</a></li>
+                                <li><a href="#We">Nosotros</a></li>
+                                <li><a href="#Hero">Servicios</a></li>
                                 <li><a href="#">Beneficios</a></li>
-                                <li><a href="#">Trabaja con nosotros</a></li>
+                                <li><a href="#Contact">Trabaja con nosotros</a></li>
                             </ul>
                         </nav>
                     </div>
