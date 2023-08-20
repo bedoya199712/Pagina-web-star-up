@@ -266,6 +266,9 @@ main {
 }
 
 .Title-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -404,6 +407,112 @@ main {
     margin: 2%;
 }
 
+
+/* TESTIMONYS */
+.Testimony {
+    background-color: #F7F7FB;
+}
+
+.Testimony__title-width {
+    padding-top:  3%;
+    width: 85%;
+    margin: 0;
+}
+
+.Testimony__box-imgs {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 47px;
+}
+
+.Testimony__box {
+    width: 250px;
+    height: 265px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(0deg, var(--white, #FFF) 0%, var(--white, #FFF) 100%), #393E35;
+    padding: 20px;
+    margin-top: 7%;
+
+    /* sombra1 */
+    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+/* BRANDS */
+.Brands {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 7% ;
+}
+
+.Brands__box {
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 100px;
+    
+}
+
+/* CONTACT */ 
+.Contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.Contact__information {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 3%;
+}
+
+.Contact__information-Title-text{
+    color: var(--blue-keep, #000083);
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101.523%; /* 60.914px */
+}
+
+.form {
+    width: 100%;
+    margin: 2%;
+    padding: 2%;
+}
+
+.Contact__input {
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    background: #F7F7FB;
+    padding-left: 40px;
+    margin: 1%;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Contact__input_div {
+    position: relative;
+    width: 100%;
+}
 
 
 
