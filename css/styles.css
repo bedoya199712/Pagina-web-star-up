@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-/* RESET */ 
+/* RESET  */ 
 body {
     margin: 0;
     background-color: white;
@@ -11,6 +11,7 @@ ul,h1,h2,h3,h4,h5,h6 {
     padding: 0;
     font-family: inherit;
 }
+/* ESTILOS DE LAS LISTAS Y EL ELEMENTO "a" */
 
 ul {
     list-style: none;
@@ -30,13 +31,6 @@ a {
 html {
     font-family: 'Poppins', sans-serif;
 }
-
-:root {
-    --main-padding: 30px;   
-    --logo-size: 103px;
-    --logo-middle-size: 51px;
-}
-
 /* TITULOS PAGE AND GENERAL */
 h1 {
     font-size: 52px;
@@ -69,17 +63,27 @@ p {
     line-height: 35px;
 }
 
+/* VARIABLES PARA EL TAMAÑO DE LOS LOGOS */
+:root {
+    --main-padding: 30px;   
+    --logo-size: 103px;
+    --logo-middle-size: 51px;
+}
+
+/* CONTAINER PRINCIPAL */
 .Container {
     max-width: 1440px;
     margin: auto;
 }
 
+/* CONTAINER PARA LAS SECCIONES CON FONDO BLANCO */
 .Container-important {
     background-color: rgb(247, 247, 251);
 }
 
 /* HEADER, NAVBAR */
 
+/* POSICION DEL HEADER Y COLOR */
 .Header {
     position: sticky;
     top: 0;
@@ -88,26 +92,26 @@ p {
     z-index: 99999;
 }
 
+/* CENTRADO DEL HEADER */
 .Header__container {
     display: flex;
     align-items: center;
     gap: 40px;
     padding: 8px var(--main-padding);
 }
-
+/* POSICION DENTRO DEL NAVBAR */
 .Header__nav {
     flex: 1;
 }
 
+/* ESTILOS Y DISEÑOS DE LOS ITEMS DEL NAVBAR */
 .Header__nav-list {
     display: inline-flex;
-    list-style: none;
     gap: 60px;
 }
 
 .Header__nav-item {
     display: block;
-    text-decoration: none;
     color: white;
 }
 
@@ -115,6 +119,7 @@ p {
     color: #00CAFF;
 }
 
+/* BOTON DEL  NAVBAR */
 .ContactMeButton {
     border-radius: 10px;
     border: 1px solid #2EBDF2;
@@ -129,16 +134,19 @@ p {
 
 /* HERO */
 
+/* POSICION */
 .Hero {
     position: relative;
     color: white;
 }
 
+/* FONDO DEL HERO */
 .Hero__content-overlay {
     position: relative;
-    z-index: 2;
     background: linear-gradient(252deg, rgba(43, 83, 229, 0.83) 0%, #000083 100%);
 }
+
+/* ORDEN DE LOS ITEMS */
 
 .Hero__Container {
     display: flex;
@@ -146,15 +154,18 @@ p {
     box-sizing: border-box;
 }
 
+/* PROPIEDADES DE LA IMAGEN DENTRO DEL HERO */
 .Hero__image {
     position: relative;
     max-width: 50%;
 }
 
+
 .Hero__image img {
     object-fit: cover;   
 }
 
+/* CONTENIDO DENTRO DEL HERO */
 .Hero__content {
     display: flex;
     flex-direction: column;
@@ -163,6 +174,7 @@ p {
     width: min(50%, 600px);
 }
 
+/* POSICION DEL HERO DENTRO DE LA PAGINA */
 .Hero__overlay{
     position: absolute;
     top: 0;
@@ -175,10 +187,12 @@ p {
     object-fit: cover;
 }
 
+/* ESPACIADO DEL CONTENIDO DEL HERO */
 .Hero__content {
     gap: 15px;
 }
 
+/* ESTILO GENERAL PARA LOS BOTONES DE LA PAGINA  */
 .AppButton {
     font-size: 18px;
     font-style: normal;
@@ -199,8 +213,7 @@ p {
     border: 1px solid black;
 }
 
-
-
+/* CLASE PARA LOS BOTONES MAS LARGOS */
 .AppButton--large {
     min-width: 250px;
 }
@@ -212,8 +225,9 @@ main {
 
 /* SERVICES */
 
+/* POSICION DE LOS SERVICIOS */
+
 .Services {
-    z-index: 2;
     position: relative;
     display: flex;
     gap: 30px;
@@ -223,6 +237,7 @@ main {
     align-items: stretch;
 }
 
+/* CAJA DE CADA SERVICIO */
 .Service {
     background-color: white;
     border-radius: 36px;
@@ -236,6 +251,7 @@ main {
     padding: 40px 10px;
 }
 
+/* CENTRADO Y DIRECCION DEL TEXTO INFORMATIVO DEL SERVICIO */
 .Service__info {
     display: flex;
     flex-direction: column;
@@ -243,6 +259,7 @@ main {
     justify-content: center;
 }
 
+/* COLOR DEL TITULO Y TEXTO INFORMATIVO DEL SERVICIO */
 .Service__info-title {
     color: var(--text-heading-color, #1E1D4C);
 }
@@ -252,7 +269,7 @@ main {
     max-width: 80%;
 }
 
-/* ABOUT US */
+/* ACERCA DE NOSOTROS */
 
 .We {
     display: flex;
@@ -261,10 +278,12 @@ main {
     padding: 80px 0;
 }
 
+/* DISEÑO DE LA IMAGEN */
 .We__img img {
     border-radius: 40px;
 }
 
+/* CENTRADO DEL TEXTO INFORMATIVO */
 .We__info {
     display: flex;
     flex-direction: column;
@@ -274,6 +293,7 @@ main {
    
 }
 
+/* CLASE PARA TODO EL TEXTO QUE DEBA ESTAR CENTRADO */
 .Title-center {
     display: flex;
     flex-direction: column;
@@ -281,6 +301,7 @@ main {
     text-align: center;
 }
 
+/* COLOR Y ESTILO DE TITULOS, SUBTITULOS Y TEXTOS */
 .Title-text {
     font-size: 40px;
     font-style: normal;
@@ -293,8 +314,7 @@ main {
     margin-bottom: 20px;
     color: var(--1, #1E1D4C);
     font-size: 20px;
-    font-style: normal;
-    
+    font-style: normal;   
     font-weight: 400;
     line-height: 110%; /* 22px */
     letter-spacing: 2.5px;
@@ -305,67 +325,8 @@ main {
     color: var(--2, #5E6282);
 }
 
-/* WE SERVICES */
-
-.We__Services {
-    padding: 80px 0;
-}
-
-.We__Services-common {
-    margin-bottom: 70px;
-}
-
-.We__Services-box-img {
-    width: 100%;
-    height: 100%;
-}
-
-.We__Services-box-imgs {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-}
-
-.We__Services-box-imgs-interest {
-    display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;   
-    justify-content: center;  
-    margin: 40px 0;
-    gap: 40px 10px;
-}
-
-.We__Services-box-interest {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    gap: 2px;
-    flex-basis: 20%;
-    align-items: center;
-}
-
-.We__Services-box-info {
-    width: 80%;
-}
-
-.We__Services-box {
-    box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    margin: 2%;
-}
-
-.We__Services-text-info {
-    color: var(--2, #5E6282);
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
+/* NUESTROS SERVICIOS */
+/* TITULO DE LA SECCION */
 .We__Services-title-subtext {
     color: var(--1, #1E1D4C);
     text-align: center;
@@ -375,8 +336,77 @@ main {
     line-height: 110%; /* 33px */
 }
 
-/* CHOOSE YOUR TYPE */
+.We__Services {
+    padding: 80px 0;
+}
 
+.We__Services-common {
+    margin-bottom: 70px;
+}
+
+/* PROPIEDADES DE LA IMAGEN */
+.We__Services-box-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* CAJA DONDE VAN LAS IMAGENES */
+.We__Services-box-imgs {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.We__Services-box-info {
+    width: 80%;
+}
+/* CAJA DE CADA SERVICIO */
+.We__Services-box {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin: 2%;
+}
+/* FONT DEL TEXTO INFORMATIVO */
+.We__Services-text-info {
+    color: var(--2, #5E6282);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+/* SECCION TAMBIEN TE PUEDE INTERESAR */
+/* CAJA DE IMAGENES, ALINEACION Y LAYOUT */
+.We__Services-box-imgs-interest {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;   
+    justify-content: center;  
+    margin: 40px 0;
+    gap: 40px 10px;
+}
+
+/* CAJA PARA CADA IMAGEN */
+.We__Services-box-interest {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 2px;
+    flex-basis: 20%;
+    align-items: center;
+}
+
+
+/* CHOOSE YOUR TYPE, ESCOGE A TU MANERA */
+
+/* LAYOUT */
 .Choose__your-shape {
     display: flex;
     flex-direction: row;
@@ -385,6 +415,7 @@ main {
     align-items: center;
 }
 
+/* CIRCULO DE FONDO PARA CADA LOGO */
 .Choose__your-shape-logo {
     color: white;
     width: calc(var(--logo-size)/1.5);
@@ -402,16 +433,16 @@ main {
     max-width: 50%;
 }
 
+/* LAYOUT DE LOS SERVICIOS DISPONIBLES */
 .Choose__your-shape-type {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-  
     justify-items: center;
 }
 
-
+/* CAJA PARA CADA SERVICIO DISPONIBLE */
 .Choose__your-shape-service {
     max-width: 700px;
     flex-basis: fit-content;
@@ -421,13 +452,13 @@ main {
     box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
+/* TITULO DEL SERVICIO */
 .Choose__your-shape-title-service {
     color: var(--text-heading-color, #1E1D4C);
     margin-bottom: 10px;
 }
 
-
-
+/* TEXTO INFORMATIVO DEL SERVICIO */
 .Choose__your-shape-text-service {
     color: var(--textclr, #5E6282);
     font-size: 16px;
@@ -437,6 +468,7 @@ main {
 }
 
 /* INFORMACION CONTAMOS CON REPSE */
+/* LAYOUT Y ALINEACION DE ITEMS */
 .Text__Information {
     display: flex;
     flex-direction: column;
@@ -444,6 +476,7 @@ main {
     gap: 60px;
 }
 
+/* TITULO */
 .Text__Information-title {
     text-align: center;
     font-size: 90px;
@@ -456,11 +489,13 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+/* ALINEACION DEL TEXTO  */
 .Text__Information-text {
     width: 85%;
     text-align: center;
 }
 
+/* LAYOUT LOGOS */
 .Text__Information-imgs {
     display: flex;
     flex-direction: row;
@@ -468,12 +503,10 @@ main {
     margin-top: 3%;
 }
 
-.Work__With-us {
-    margin: 2%;
-}
-
 
 /* TESTIMONYS */
+
+/* LAYOUT */
 .Testimony {
     background-color: #F7F7FB;
     border-radius: 30px;
@@ -484,6 +517,7 @@ main {
     max-width: 700px;
 }
 
+/* LAYOUT CAJA DE TESTIMONIOS */
 .Testimony__boxes {
     display: flex;
     align-items: stretch;
@@ -493,6 +527,7 @@ main {
     margin-top: 50px;
 }
 
+/* CIRCULO DE FONDO PARA EL LOGO DE TESTIMONIO */
 .TestimonyBox-logo {
     color: white;
     width: var(--logo-size);
@@ -506,9 +541,8 @@ main {
     top: calc(-1 * var(--logo-middle-size))
 }
 
+/* LAYOUT PARA CADA CAJA DE TESTIMONIO */
 .TestimonyBox {
-
-
     margin-top: var(--logo-middle-size);
     position: relative;
     max-width: 350px;
@@ -525,17 +559,20 @@ main {
     box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
+/* FOOTER DE LA CAJA DE TESTIMONIO */
 .TestimonyBox__footer-text {
     color: var(--1, #1E1D4C);
     font-weight: 600;
 }
 
+/* COLOR TEXTO INFORMATIVO DEL TESTIMONIO */
 .TestimonyBox-text {
     text-align: center;
     color: #5E6282;
 }
 
-/* BRANDS */
+/* BRANDS, MARCAS */
+/* LAYOUT */
 .Brands {
     display: flex;
     flex-direction: column;
@@ -543,6 +580,7 @@ main {
     padding-top: 7% ;
 }
 
+/* CAJA  PARA CADA BLOQUE DE MARCAS EN FILA*/
 .Brands__box {
     display: flex;
     margin-bottom: 5%;
@@ -553,12 +591,13 @@ main {
     
 }
 
-/* CONTACT */ 
+/* CONTACT, CONTACTANOS */ 
 .Contact {
     display: flex;
     flex-direction: row;
 }
 
+/* LAYOUT  MENSAJE DE CONTACTANOS*/
 .Contact__information {
     display: flex;
     flex-direction: column;
@@ -566,21 +605,23 @@ main {
     padding: 3%;
 }
 
+/* TITULO DE CONTACTANOS */
 .Contact__information-Title-text{
     color: var(--blue-keep, #000083);
-
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: 101.523%; /* 60.914px */
 }
 
+/* FORMULARIO CONTACTANOS */
 .form {
     width: 100%;
     margin: 2%;
     padding: 2%;
 }
 
+/* ESTILO PARA CADA INPUT DEL FORMULARIO */
 .Contact__input {
     width: 100%;
     height: 50px;
@@ -593,6 +634,7 @@ main {
     margin: 1%;
 }
 
+/* ESTILO PARA EL ICONO DE CADA INPUT */
 .input-icon {
     color: #191919;
     position: absolute;
@@ -603,18 +645,20 @@ main {
     transform: translateY(-50%);
 }
 
+/* CAJA DONDE SE PONDRA CADA INPUT */
 .Contact__input_div {
     position: relative;
     width: 100%;
 }
 
 /* FOOTER */
-
+/* COLOR Y PADDING */
 footer {
     background-color: #000083;
     padding: 50px 0;
 }
 
+/* LAYOUT */
 .Footer {
     display: flex;
     align-items: center;
@@ -623,42 +667,19 @@ footer {
     margin-bottom: 50px;
 }
 
+/* LOGO */
 .Footer__logo-img {
     max-width: 200px;
 }
 
-.Footer__info {
-    display: inline-flex;
-    gap: 80px;
-}
-
-.Footer__category-title {
-    margin-bottom: 10px;
-}
-
-.Footer__category {
-    flex-basis: 33.333%;
-}
-
-.divider {  
-    margin: 0;
-    border-bottom: 1px solid white;
-    margin-bottom: 30px;
-}
-
-.Footer__hr {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
+/* SECCION ICONOS DE REDES SOCIALES */
 .Footer__logo-icons {
     display: flex;
     flex-direction: row;
     gap:20px;
 }
 
+/* CIRCULO PARA EL FONDO DEL ICONO */
 .Footer__logo-icon {
     color: white;
     width: calc(var(--logo-size)/3);
@@ -671,11 +692,43 @@ footer {
     top: calc(-1 * var(--logo-middle-size));
 }
 
+/* CENTRAR LOS ELEMENTOS QUE ESTEN DENTRO DE UN "a" PARA CONVERTIRLO A LINK */
 .Footer__logo-icon-a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* TEXTO INFORMATIVO DEL FOOTER */
+.Footer__info {
+    display: inline-flex;
+    gap: 80px;
+}
+
+/* TITULO DE CADA CATEGORIA DEL FOOTER */
+.Footer__category-title {
+    margin-bottom: 10px;
+}
+/* CUANTO VA A OCUPAR CADA CATEGORIA DEL FOOTER */
+.Footer__category {
+    flex-basis: 33.333%;
+}
+
+/* LINEA DE SEPARACION DEL FOOTER */
+.divider {  
+    margin: 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+}
+
+/* PARTE FINAL DEL FOOTER COPYRIGHT */
+.Footer__hr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
 
 
 
