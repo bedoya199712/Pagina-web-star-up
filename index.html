@@ -21,7 +21,7 @@
             <div class="Header__nav">
                 <nav>
                     <ul class="Header__nav-list">
-                        <li><a href="#Hero" class="Header__nav-item">Servicios</a></li>
+                        <li><a href="#We__Services" class="Header__nav-item">Servicios</a></li>
                         <li><a href="#We" class="Header__nav-item">Nosotros</a></li>
                         <li><a href="#" class="Header__nav-item">Beneficios</a></li>
                         <li><a href="#JoinTheTeam" class="Header__nav-item">Trabaja con nosotros</a></li>
@@ -45,7 +45,7 @@
         <div class="Hero__content-overlay">
             <div class="Hero__Container Container">
                 <div class="Hero__content">
-                    <h4>Conoce nuestros</h4>
+                    <h4 class="Hero__content-title">Conoce nuestros</h4>
                     <h1>Servicios de limpieza de alta calidad para la industria</h1>
                     <p>
                         Experimenta la excelencia en limpieza industrial. Confía en Industrial Keeper para espacios
@@ -78,7 +78,7 @@
                     <!-- CONTENIDO -->
                     <div class="Service__info">
                         <h6 class="Service__info-title">Atención 24/7</h6>
-                        <p class="Service_info-description">
+                        <p class="Service__info-description">
                             Nuestra atención siempre será rápida y oportuna
                         </p>
                     </div>
@@ -91,7 +91,7 @@
                     <!-- CONTENIDO -->
                     <div class="Service__info">
                         <h6 class="Service__info-title">Garantía de servicio</h6>
-                        <p class="Service_info-description">
+                        <p class="Service__info-description">
                             Garantizamos la calidad de todos nuestros servicios
                         </p>
                     </div>
@@ -104,7 +104,7 @@
                     <!-- CONTENIDO -->
                     <div class="Service__info">
                         <h6 class="Service__info-title">Disponibilidad inmediata</h6>
-                        <p class="Service_info-description">
+                        <p class="Service__info-description">
                             Contamos con una gran capacidad de personal altamente calificado
                         </p>
                     </div>
@@ -255,7 +255,8 @@
                     </div>
                     <!-- BOTON DE LA SECCION SERVICIOS PARA REDIRIGIR AL FOOTER -->
                     <div class="Title-center">
-                        <a href="#Footer"><input type="submit" class="AppButton AppButton--large" value="Contáctanos"></a>
+                        <a href="#Footer"><input type="submit" class="AppButton AppButton--large"
+                                value="Contáctanos"></a>
                     </div>
                 </div>
             </div>
@@ -377,9 +378,7 @@
                         oportunidades laborales.
                     </p>
                     <!-- BOTON QUE REDIRECCIONA A LA SECCION CONTACTANOS -->
-                    <div>
-                        <a href="#Contact"><input type="submit" class="AppButton" value="Quiero ser parte"></a>
-                    </div>
+                    <a href="#Contact"><input type="submit" class="AppButton" value="Quiero ser parte"></a>
                 </div>
             </div>
             <!-- SECCION DE TESTIMONIOS -->
@@ -626,7 +625,7 @@
             </div>
         </div>
         <!-- SECCION CONTACTANOS -->
-        <div id="Contact" class="We Container-white">
+        <div id="Contact" class="We Container-white Container">
             <div class="Contact">
                 <!-- INFORMACION CONTACTANOS -->
                 <div class="Contact__information">
@@ -639,7 +638,7 @@
                     </p>
                 </div>
                 <!-- FORMULARIO -->
-                <div class="form">
+                <div class="Contact__form">
                     <!-- CADA INPUT DEL FORMULARIO TIENE LOGO -->
                     <div class="Contact__input_div">
                         <input type="text" class="Contact__input" placeholder="Nombre">
@@ -653,13 +652,15 @@
                         <input type="text" class="Contact__input" placeholder="Celular">
                         <img class="input-icon" src="./img/icon_phone.svg" alt="icono de celular">
                     </div>
-                    <div class="Contact__input_div">
-                        <input type="text" class="Contact__input" placeholder="Asunto">
-                        <img class="input-icon" src="./img/icon_chat.svg" alt="icono de mensaje">
+                    <div class="Contact__text-area-div">
+                        <textarea type="text" class="Contact__text-area" placeholder="Asunto"></textarea>
+                        <img class="input-icon-text-area" src="./img/icon_chat.svg" alt="icono de mensaje">
                     </div>
-                    <form action="#">
-                        <input type="submit" class="AppButton AppButton--large" value="Enviar">
-                    </form>
+                    <div class="Contact__form-button">
+                        <form action="#">
+                            <input type="submit" class="AppButton AppButton--large" value="Enviar">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -724,7 +725,7 @@
                         <nav class="Footer__nav">
                             <ul>
                                 <li><a href="#We">Nosotros</a></li>
-                                <li><a href="#Hero">Servicios</a></li>
+                                <li><a href="#We__Services">Servicios</a></li>
                                 <li><a href="#">Beneficios</a></li>
                                 <li><a href="#Contact">Trabaja con nosotros</a></li>
                             </ul>
@@ -758,6 +759,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

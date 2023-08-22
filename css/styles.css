@@ -132,6 +132,16 @@ p {
     font-weight: 600;
 }
 
+.ContactMeButton:hover {
+    color: var(--blue-keep, #000083);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px; /* 130% */
+    border-radius: 10px;
+    border: 1px solid #2EBDF2;
+    background: var(--blue-2-keep, #00CAFF);
+}
+
 /* HERO */
 
 /* POSICION */
@@ -146,7 +156,7 @@ p {
     background: linear-gradient(252deg, rgba(43, 83, 229, 0.83) 0%, #000083 100%);
 }
 
-/* ORDEN DE LOS ITEMS */
+/* LAYOUT */
 
 .Hero__Container {
     display: flex;
@@ -162,7 +172,7 @@ p {
 
 
 .Hero__image img {
-    object-fit: cover;   
+    object-fit: fill;   
 }
 
 /* CONTENIDO DENTRO DEL HERO */
@@ -172,6 +182,11 @@ p {
     justify-content: center;
     padding: 12px calc(var(--main-padding));
     width: min(50%, 600px);
+}
+
+/* ESPACIADO DEL TITULO DEL HERO */
+.Hero__content-title {
+    letter-spacing: 3px;
 }
 
 /* POSICION DEL HERO DENTRO DE LA PAGINA */
@@ -208,9 +223,9 @@ p {
     font-family: inherit;
 }
 
-.AppButton:hover, .ContactMeButton:hover{
-    background-color: gray;
-    border: 1px solid black;
+.AppButton:hover{
+    border-radius: 10px;
+    background: #7CE4FF;
 }
 
 /* CLASE PARA LOS BOTONES MAS LARGOS */
@@ -288,9 +303,13 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
+    gap: 50px;
+    padding: 0 50px;
     max-width: 600px;
-   
+}
+
+.JoinTheTeam__button {
+    margin-top: 50px;
 }
 
 /* CLASE PARA TODO EL TEXTO QUE DEBA ESTAR CENTRADO */
@@ -615,10 +634,14 @@ main {
 }
 
 /* FORMULARIO CONTACTANOS */
-.form {
+.Contact__form {
     width: 100%;
     margin: 2%;
     padding: 2%;
+}
+
+.Contact__form-button{
+    margin: 20px 0px;
 }
 
 /* ESTILO PARA CADA INPUT DEL FORMULARIO */
@@ -649,6 +672,37 @@ main {
 .Contact__input_div {
     position: relative;
     width: 100%;
+}
+
+/* LAYOUT DEL TEXT AREA */
+.Contact__text-area {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    background: #F7F7FB;
+    padding-left: 40px;
+    margin: 1%;
+    resize: none;
+}
+/* POSICION DEL ICONO DENTRO DEL DIV DE TEXT AREA */
+.input-icon-text-area {
+    color: #191919;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 12px;
+    top: 10%;
+    transform: translateY(-10%);
+}
+
+/* CAJA DONDE SE PONDRA CADA TEXT AREA */
+.Contact__text-area-div {
+    position: relative;
+    width: 100%;
+    height: 100px;
 }
 
 /* FOOTER */
