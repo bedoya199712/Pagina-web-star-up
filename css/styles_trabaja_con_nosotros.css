@@ -42,7 +42,11 @@
     padding: 10px;
 }
 
-select ,input , ::placeholder{
+select,input,::placeholder{
     font-family: 'Poppins', sans-serif;
+    color: var(--2, #5E6282);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-

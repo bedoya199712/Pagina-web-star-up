@@ -32,8 +32,14 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-input, textarea {
+input, textarea,::placeholder {
     font-family: 'Poppins', sans-serif;
+    color: var(--2, #5E6282);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 }
 /* TITULOS PAGE AND GENERAL */
 h1 {
@@ -736,6 +742,7 @@ padding: 0px 70px;
     margin: 1%;
     resize: none;
 }
+
 /* POSICION DEL ICONO DENTRO DEL DIV DE TEXT AREA */
 .input-icon-text-area {
     color: #191919;
@@ -743,9 +750,11 @@ padding: 0px 70px;
     width: 25px;
     height: 25px;
     left: 12px;
-    top: 10%;
+    top: 15%;
     transform: translateY(-10%);
 }
+
+
 
 /* CAJA DONDE SE PONDRA CADA TEXT AREA */
 .Contact__text-area-div {
