@@ -31,6 +31,10 @@ a {
 html {
     font-family: 'Poppins', sans-serif;
 }
+
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+}
 /* TITULOS PAGE AND GENERAL */
 h1 {
     font-size: 52px;
