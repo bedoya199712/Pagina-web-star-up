@@ -39,7 +39,9 @@ input, textarea,::placeholder {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
+}
+input:focus {
+    border-color: black;
 }
 /* TITULOS PAGE AND GENERAL */
 h1 {
@@ -765,7 +767,12 @@ padding: 0px 70px;
 
 /* BACKGROUND DE LA VALIDACION DEL EMAIL */
 .Validacion__email {
-    color: red;
+    color: #DD0748;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 157.4%; /* 23.61px */
 }
 
 /* FOOTER */

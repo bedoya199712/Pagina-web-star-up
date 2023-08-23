@@ -11,7 +11,7 @@ botonFormTrabajaConNosotros.addEventListener('click', function () {
     const validacionEmail = document.getElementById('validacionEmail');
     //VALIDACION DEL CAMPO EMAIL
     if (email.value == '') {
-        validacionEmail.innerHTML = "<p><strong>El campo email es requerido </strong></p>"
+        validacionEmail.innerHTML = "<p>El campo email es requerido *</p>"
     } else {
         //CREO EL BODY DEL CORREO
         const AsuntoMensaje = 'Candidato de empleo';
