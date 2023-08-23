@@ -1,0 +1,48 @@
+/* HERO */
+
+/* COLOR DEL TITUTLO DEL HERO */
+.Hero__content-title-trabaja-con-nosotros{
+    color: #000083;
+}
+/* FONT TEXTO INFORMATIVO HERO */
+.Hero__subtext-trabaja-con-nosotros{
+    color: var(--2, #5E6282);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* DIMENSION DEL TEXTO INFORMATIVO */
+.Hero__content-caja-subtext {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* CONTACT CONTACTANOS */
+
+/* TEXTO INFORMATIVO  */
+.Contact__information-trabaja-con-nosotros{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+}
+
+.Contact__information-caja {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    gap: 35px;
+}
+/* FORM TRABAJA CON NOSOTROS */
+.Contact__form-trabaja-con-nosotros {
+    width: 100%;
+    padding: 10px;
+}
+
+select ,input , ::placeholder{
+    font-family: 'Poppins', sans-serif;
+}
+

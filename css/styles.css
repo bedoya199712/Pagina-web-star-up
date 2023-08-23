@@ -443,10 +443,13 @@ main {
 display: flex;
 align-items: center;
 }
-
+/* CAJA DEL DISEÑO  */
 .Choose__your-shape-vector {
 position: absolute;
-
+max-width: 50%;
+}
+.Choose__your-shape-vector-max-content {
+    max-width: 100%;
 }
 .Choose__your-shape-information-text {
 position: relative;
@@ -660,8 +663,9 @@ padding: 0px 70px;
 .Contact__information {
     display: flex;
     flex-direction: column;
+    gap: 40px;
     max-width: 50%;
-    padding: 3%;
+    padding: 30px;
 }
 
 /* TITULO DE CONTACTANOS */
@@ -673,11 +677,16 @@ padding: 0px 70px;
     line-height: 101.523%; /* 60.914px */
 }
 
+/* El texto informativo no ocupe todo la caja */
+.Contact__information-text {
+    width: 70%;
+}
+
+
 /* FORMULARIO CONTACTANOS */
 .Contact__form {
     width: 100%;
-    margin: 2%;
-    padding: 2%;
+    padding: 10px;
 }
 
 .Contact__form-button{
@@ -743,6 +752,11 @@ padding: 0px 70px;
     position: relative;
     width: 100%;
     height: 100px;
+}
+
+/* BACKGROUND DE LA VALIDACION DEL EMAIL */
+.Validacion__email {
+    color: red;
 }
 
 /* FOOTER */
