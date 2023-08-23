@@ -290,7 +290,7 @@ main {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 /* DISEÑO DE LA IMAGEN */
@@ -434,6 +434,20 @@ main {
     align-items: center;
 }
 
+/* DISEÑO QUE ENCIERRA A LA INFORMACION DE LA SECCION */
+.Choose__your-shape-information {
+display: flex;
+align-items: center;
+}
+
+.Choose__your-shape-vector {
+position: absolute;
+
+}
+.Choose__your-shape-information-text {
+position: relative;
+padding: 0px 70px;
+}
 /* CIRCULO DE FONDO PARA CADA LOGO */
 .Choose__your-shape-logo {
     color: white;
@@ -492,8 +506,30 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     gap: 60px;
 }
+/* CONTENEDOR QUE CONTIENE LA SECCION COMPLETA */
+.Container__information {
+    display: inline-flex;
+    width: 100%;
+    position: relative;   
+}
+
+/* CONTENEDOR QUE CONTIENE LA INFORMACION DE LA SECCION */
+.Container__text-information {
+    display: flex;
+    align-items: center;
+}
+/* CAJA CONTENEDORA DEL DISEÑO A LA DERECHA */
+.Text__Information-vector-right {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
 
 /* TITULO */
 .Text__Information-title {
