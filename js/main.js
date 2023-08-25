@@ -3,7 +3,7 @@
 const botonForm = document.getElementById('botonForm');
 // EVENTO QUE OCURRE CUANDO SE LE DA CLICK AL BOTON
 botonForm.addEventListener('click', function () {
-    //CAPTURA DE ELEMENTOS DEL FORMULARIO
+    /*CAPTURA DE ELEMENTOS DEL FORMULARIO
     const nombre = document.getElementById('nombre');
     const email = document.getElementById('email');
     const celular = document.getElementById('celular');
@@ -27,7 +27,10 @@ botonForm.addEventListener('click', function () {
         validacionEmail.innerText='';
 
     }
+    */
 })
+
+
 
 
 

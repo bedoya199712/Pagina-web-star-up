@@ -853,6 +853,102 @@ footer {
     color: white;
 }
 
+/* MODAL ENVIO FORMULARIO */
+/* MASCARA - OCULTO */
+.Modal__envio-formulario {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    top: 90%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(15, 30, 68, 0.6);
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+}
+
+
+
+/* MOSTRAR FORMULARIO */
+.Modal__envio-formulario:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* CIRCULO PARA EL ICONO DEL MODAL */
+
+.Modal__icono {
+    width: calc(var(--logo-size)/1.5);
+    height: calc(var(--logo-size)/1.5);
+    background-color: #b6fffd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(-1 * var(--logo-middle-size));
+}
+/* CAJA DEL MODAL */
+.Modal__envio-formulario-show{
+    display: flex;
+    max-width: 30%;
+    padding: 62px 17px 43px 26px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid var(--gray-gray-2, #D9D9D9);
+    background: var(--white, #FFF);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+}
+
+.movedown {
+    margin: 0 auto;
+}
+
+.Modal__envio-formulario:target .movedown{       
+    margin:10% auto;
+}
+
+.Modal__title {
+    text-align: center;
+}
+
+.Modal__title-text{
+    color: var(--blue-keep, #000083);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.Modal__icono-cerrar {
+    display: flex;
+    align-items: center;
+}
+/*Boton de cerrar*/
+.close {
+    color: #FFFFFF;
+    line-height: 25px;
+    position: relative;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+
+}
+
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+
+
 
 
 
